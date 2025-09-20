@@ -1,0 +1,40 @@
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Build Files ---
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# --- Executables ---
+Calculator
+*.exe
+*.out
+*.app
+
+# --- Logs / Temp ---
+*.log
+*.tmp
+
+# --- VSCode ---
+.vscode/
+*.code-workspace
+
+# --- Backups ---
+*~
+*.bak
+
+# --- Compiled Object Files ---
+*.o
+*.obj
+*.gch
+*.pch
+
+# --- Asset Cache ---
+assets/cache/
+
+# --- Draw.io ---
+*.drawio
