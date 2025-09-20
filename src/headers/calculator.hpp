@@ -5,7 +5,7 @@
 #include <utility> // for std::pair
 #include <iostream>
 #include <cstdlib>
-
+#include "utils.hpp"
 
 class Calc {
 private:
@@ -14,10 +14,10 @@ private:
     // pair<double, double> lastOperands;
 
 public:
-    Calc();
     void run();
-    void processInput(const std::string& input);
+    void processInput(double a, double b, char op);
     // double squareRoot(double value);
+    void display();
     void clearHistory();
     void printHistory() const;
 }
