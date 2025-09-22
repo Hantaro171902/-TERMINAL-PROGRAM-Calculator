@@ -24,7 +24,7 @@ The UI is rendered with ASCII art and ANSI escape codes, giving it a retro pocke
 
 ### Clone the repo:
 ```bash
-git clone https://github.com/your-username/ascii-calculator.git
+git clone https://github.com/Hantaro171902/-TERMINAL-PROGRAM-Calculator.git
 cd ascii-calculator
 mkdir build && cd build
 cmake ..
