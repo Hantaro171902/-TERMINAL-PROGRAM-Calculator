@@ -3,32 +3,27 @@
 #pragma once
 
 #include <string>
+#include <vector>
+#include <utility> // for std::pair
+#include <iostream>
+#include <cstdlib>
+#include "utils.hpp"
 
 class Calc {
+private:
+    std::vector<std::string> history;
+    std::string currentInput;
+    // pair<double, double> lastOperands;
+
 public:
     Calc();
     ~Calc() = default;
 
     // entry point
     void run();
-
-    // drawing (public for testing)
-    void draw(char highlight = 0);
-
-private:
-    // state
-    std::string leftBuf;
-    std::string rightBuf;
-    std::string displayValue;
-    char oper;
-    bool enteringRight;
-    bool shouldExit;
-
-    // helpers
-    void animatePress(char ch);
-    void appendDigit(char d);
-    void computeOnce();
-
-    static std::string button_bg(const std::string &s);
-    static constexpr int DISPLAY_WIDTH = 15;
-};
+    void processInput(double a, double b, char op);
+    // double squareRoot(double value);
+    void display();
+    void clearHistory();
+    void printHistory() const;
+}
